@@ -1,7 +1,7 @@
 import React from "react";
 import service from "../appwrite/configure";
 import {Link} from 'react-router-dom'
-function PostCard({
+export default function PostCard({
     $id, // $id WE NEED TO WRITE ID AS $ID IF WE ARE TAKING OR PASIING THE ID TO APPWRITE
     title,
     featuredImage,

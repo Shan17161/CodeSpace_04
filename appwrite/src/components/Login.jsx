@@ -5,7 +5,7 @@ import { Button, Input, Logo } from './index'
 import { useDispatch } from 'react-redux';
 import AuthService from '../appwrite/auth';
 import { set, useForm } from 'react-hook-form'
-function Login() {
+export default function Login() {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const [error, setError] = useState('');

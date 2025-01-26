@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
-import {container, PostCard} from '../components/index';
+import {Container, PostCard} from '../components/index';
 import service from "../appwrite/configure";
 
-function Allposts(){
+export default function Allposts(){
     const [posts, setPosts] = useState([]);
     useEffect(()=>{}, [])
     service.getPosts([]).then((posts)=>{
@@ -13,7 +13,7 @@ function Allposts(){
 })
     return(
         <div className="w-full py-8">
-            <container>
+            <Container>
                 <div className="flex flex-wrap">
                     {posts.map((post)=>{
                         <div className="p-2 w-1/4" key={post.$id}>
@@ -21,7 +21,7 @@ function Allposts(){
                         </div>
                         })}
                 </div>
-            </container>
+            </Container>
         </div>
     )
 }

@@ -6,7 +6,7 @@ import {login, logout} from './store/authSlice.js'
 import {Header, Footer} from './components/index.js'
 import { Outlet } from 'react-router-dom'
 import './App.css'
-import config from './cofig/config.js'
+import config from './config/config.js'
 
 function App() {
 
